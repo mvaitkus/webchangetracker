@@ -52,7 +52,7 @@ def retrieve_skelbiu_adverts(page):
 def skelbiu_advert_div(tag):
     if tag.has_key("class"):
         tagclass = tag.get('class')
-        return tagclass == ['simpleAds'] or tagclass == ['popularAds']
+        return tagclass == ['simpleAds'] or tagclass == ['popularAds'] or tagclass == ['boldAds']
     else:
         return False
 
